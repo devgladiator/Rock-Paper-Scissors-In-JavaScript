@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(Background.png);
+  font-family: 'Poppins', sans-serif;
+  overflow-y:scroll;
+}
+.container{
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+header p{
+  font-size: 13px;
+  margin-top: 15px;
+  background-color: #333;
+  display: inline-block;
+  color: #CCC;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+}
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 5rem;
+  transition: 100ms;
+}
+.selection img{
+  width: 5rem;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.result-block{
+  padding: 15px;
+  text-align: center;
+  width: 160px;
+}
+.score-title{
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.result-score {
+  margin-left: .1rem;
+  font-size: 1.2rem;
+  color: #CCC;
+}
+
+.result-selection {
+  opacity: .5;
+  width: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  width: 5rem;
+}
+
+.img-block{
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+.float-text::before{
+  content: 'Winner';
+  position: absolute;
+  top: -7px;
+  left: -25px;
+  color: #ffffff;
+}
